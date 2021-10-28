@@ -2,7 +2,7 @@ default: &default
   host: localhost
   adapter: postgresql
   encoding: UTF8
-  username: my_role
+  username: api_user
   timeout: 5000
   reaping_frequency: 30
 
@@ -13,13 +13,13 @@ default: &default
 
 development:
   <<: *default
-  database: db_development
-  password: "admin"
+  database: api_hirer_development
+  password: "password"
 
 test:
   <<: *default
-  database: db_test
-  password: "admin"
+  database: api_hirer_test
+  password: "password"
 
 production:
   <<: *default
