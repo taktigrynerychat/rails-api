@@ -32,3 +32,4 @@
 
 #Ignore IDE files
 /.idea
+/.idea/*
